@@ -1,10 +1,9 @@
-const { open: fsOpen } = require("node:fs/promises");
-
-let floor = 0;
-let basementStep = 0;
-let inputData = "";
-
 (async () => {
+  const { open: fsOpen } = require("node:fs/promises");
+
+  let floor = 0;
+  let basementStep = 0;
+  let inputData = "";
   try {
     const file = await fsOpen("./2015-01/input.txt");
     for await (const line of file.readLines()) {
