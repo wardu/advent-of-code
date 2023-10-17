@@ -78,9 +78,7 @@
         }
       }
     }
-    const numberOfHousesVisitedBySanta = santaVisited.size;
-    const numberOfHousesVisitedByRobo = roboVisited.size;
-    // make a set of all the houses visited by both santa and robo
+
     const housesVisitedByBoth = new Set([
       ...santaVisited.values(),
       ...roboVisited.values(),
